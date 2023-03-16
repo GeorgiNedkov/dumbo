@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [18.x]
 
     steps:
       - name: Clone repository
@@ -17,7 +17,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 18.2.0
+          node-version: ${{ matrix.node-version }}
 
       - name: Set up npm cache
         uses: actions/cache@v1
