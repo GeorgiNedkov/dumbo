@@ -12,12 +12,14 @@ import config from './config/config';
 
 const app = express();
 
-app.use(
-  cors({
-    origin: config.WHITELIST_ORIGINS,
-    credentials: true,
-  }),
-);
+//cors stuff
+// app.use(
+//   cors({
+//     origin: config.WHITELIST_ORIGINS,
+//     credentials: true,
+//   }),
+// );
+app.use(cors());
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
