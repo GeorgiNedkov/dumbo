@@ -1,5 +1,5 @@
 {
-  "name": "node-typescript-express-mongo-template",
+  "name": "dumbo",
   "version": "1.0.0",
   "description": "A minimalist TypeScript-Express boilerplate",
   "keywords": [
