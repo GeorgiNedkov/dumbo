@@ -54,7 +54,7 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "mockingoose": "^2.13.2",
+    "mockingoose": "^2.16.2",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "swagger-ui-express": "^4.1.6",
