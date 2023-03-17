@@ -1,0 +1,64 @@
+[debug] [2023-03-16T18:36:26.343Z] ----------------------------------------------------------------------
+[debug] [2023-03-16T18:36:26.344Z] Command:       /Users/georgi.nedkov/.nvm/versions/node/v18.2.0/bin/node /Users/georgi.nedkov/.nvm/versions/node/v18.2.0/bin/firebase deploy --only functions
+[debug] [2023-03-16T18:36:26.344Z] CLI Version:   11.24.1
+[debug] [2023-03-16T18:36:26.344Z] Platform:      darwin
+[debug] [2023-03-16T18:36:26.344Z] Node Version:  v18.2.0
+[debug] [2023-03-16T18:36:26.345Z] Time:          Thu Mar 16 2023 20:36:26 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-03-16T18:36:26.345Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-16T18:36:26.374Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2023-03-16T18:36:26.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-16T18:36:26.376Z] > authorizing via signed-in user (georginedkov00@gmail.com)
+[debug] [2023-03-16T18:36:26.376Z] [iam] checking project dumbo-3d6e7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-03-16T18:36:26.377Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions [none]
+[debug] [2023-03-16T18:36:26.377Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions x-goog-quota-user=projects/dumbo-3d6e7
+[debug] [2023-03-16T18:36:26.377Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-03-16T18:36:26.411Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions
+[debug] [2023-03-16T18:36:26.411Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-03-16T18:36:26.411Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-03-16T18:36:26.415Z] [functions] service account IAM check errored, deploy may fail:Failed to make request to https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions {"name":"FirebaseError","children":[],"exit":1,"message":"Failed to make request to https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions","original":{"message":"request to https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions failed, reason: getaddrinfo ENOTFOUND iam.googleapis.com","type":"system","errno":"ENOTFOUND","code":"ENOTFOUND"},"status":500}
+[info] 
+[info] === Deploying to 'dumbo-3d6e7'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2023-03-16T18:36:29.442Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dumbo-3d6e7 [none]
+[debug] [2023-03-16T18:36:29.445Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dumbo-3d6e7
+[debug] [2023-03-16T18:36:29.449Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dumbo-3d6e7
+    at RetryOperation._fn (/Users/georgi.nedkov/.nvm/versions/node/v18.2.0/lib/node_modules/firebase-tools/lib/apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project dumbo-3d6e7. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-03-16T18:36:45.120Z] ----------------------------------------------------------------------
+[debug] [2023-03-16T18:36:45.121Z] Command:       /Users/georgi.nedkov/.nvm/versions/node/v18.2.0/bin/node /Users/georgi.nedkov/.nvm/versions/node/v18.2.0/bin/firebase deploy --only functions
+[debug] [2023-03-16T18:36:45.121Z] CLI Version:   11.24.1
+[debug] [2023-03-16T18:36:45.121Z] Platform:      darwin
+[debug] [2023-03-16T18:36:45.121Z] Node Version:  v18.2.0
+[debug] [2023-03-16T18:36:45.122Z] Time:          Thu Mar 16 2023 20:36:45 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-03-16T18:36:45.122Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-16T18:36:45.153Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2023-03-16T18:36:45.155Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-16T18:36:45.155Z] > authorizing via signed-in user (georginedkov00@gmail.com)
+[debug] [2023-03-16T18:36:45.156Z] [iam] checking project dumbo-3d6e7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-03-16T18:36:45.156Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions [none]
+[debug] [2023-03-16T18:36:45.157Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions x-goog-quota-user=projects/dumbo-3d6e7
+[debug] [2023-03-16T18:36:45.157Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-03-16T18:36:45.190Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/dumbo-3d6e7:testIamPermissions
+[debug] [2023-03-16T18:36:45.190Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-03-16T18:36:45.190Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-03-16T18:36:45.194Z] [functions] service account IAM check errored, deploy may fail:Failed to make request to https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions {"name":"FirebaseError","children":[],"exit":1,"message":"Failed to make request to https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions","original":{"message":"request to https://iam.googleapis.com/v1/projects/dumbo-3d6e7/serviceAccounts/dumbo-3d6e7@appspot.gserviceaccount.com:testIamPermissions failed, reason: getaddrinfo ENOTFOUND iam.googleapis.com","type":"system","errno":"ENOTFOUND","code":"ENOTFOUND"},"status":500}
+[info] 
+[info] === Deploying to 'dumbo-3d6e7'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2023-03-16T18:36:48.118Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dumbo-3d6e7 [none]
+[debug] [2023-03-16T18:36:48.122Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dumbo-3d6e7
+[debug] [2023-03-16T18:36:48.127Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dumbo-3d6e7
+    at RetryOperation._fn (/Users/georgi.nedkov/.nvm/versions/node/v18.2.0/lib/node_modules/firebase-tools/lib/apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project dumbo-3d6e7. Please make sure the project exists and your account has permission to access it.
