@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "dumbo-3d6e7"
-  }
+  },
+  "targets": {
+    "dumbo-3d6e7": {
+      "hosting": {
+        "api": [
+          "dumbo-app-api"
+        ],
+        "app": [
+          "dumbo-app"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
